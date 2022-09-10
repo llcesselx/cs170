@@ -1,0 +1,44 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"font_size": 12,
+    "spell_check": true,
+    "translate_tabs_to_spaces": true,
+    "tabSize": 4,
+    "word_wrap": true,
+    "wrap_width_style": "min",
+    "auto_match_enabled": false,
+    "draw_minimap_border": true,
+    "debug": true,
+    "always_show_minimap_viewport": true,
+    "highlight_line": true,
+    "caret_style": "phase",
+    "caret_extra_width": 0,
+    "draw_white_space": ["all"],
+    "trim_trailing_white_space_on_save": "all",
+    "trim_only_modified_white_space": false,
+    "ensure_newline_at_eof_on_save": true,
+    "default_line_ending": "unix",
+    "auto_complete_commit_on_tab": true,
+    "auto_complete_trailing_spaces": false,
+    "shift_tab_unindent": true,
+    "drag_text": false,
+    "highlight_modified_tabs": true,
+    "bold_folder_labels": true,
+    // "hardware_acceleration": "opengl", // uncomment for faster rendering
+    "hot_exit": false,
+    "always_prompt_for_file_reload": true,
+    "show_project_first": true,
+    "ignored_packages":
+    [
+        "Vintage",
+    ],
+    "color_scheme": "Mariana.sublime-color-scheme",
+    "theme": "Default Dark.sublime-theme",
+    /*"hot_exit": false,*/
+    "remember_open_files": false,
+    "added_words":
+    [
+		"eslint"
+    ],
+}
