@@ -34,13 +34,13 @@ Create a file called prob.js. In this program we will calculate the probability 
 Since there are 12 possible results, you will need 11 individual counters, and these can be stored in either an array or an object. One could even store the counters as 12 individual variables, but that would be considered a bad practice that isn't a scalable solution, so you will lose points if you choose to do that. Start each counter value at 0.
 
 So if you are storing results in an array the setup may look like this:
-
+```
   //Number of times each value is rolled
   //          2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
   let counters = [0, 0, 0, 0, 0, 0, 0, 0,  0,  0,  0];
-
+```
 If you are storing the results in an object your setup may look like this:
-
+```
   // Number of times each value is rolled
   //  Object property names that start with numbers or contain spaces must be quoted
   let counters = {
@@ -56,7 +56,7 @@ If you are storing the results in an object your setup may look like this:
     "11", 0,
     "12", 0,
    };
-
+```
 Make a function called roll() from your previous program code that returns the result of the simulated 6-sided dice roll. In a loop that runs 100,000 times, run the roll() function, and for each result that you get, add to the counter.
 
 After you have counted how many times each result occurred, you can divide each count by the total number of tries (100,000) to get the total empirical probability of rolling that particular result value. Round the result to 2 decimal places using .toFixed(2) function that is available on all JavaScript number types. Example: (2.35555).toFixed(2) === "2.36".
@@ -66,7 +66,7 @@ In a loop, iterate through your counter array or object, and print to the consol
 Use padStart() with an empty space as the padding character when printing the results so that both the labels and the values are right aligned.
 
 Below is what your output should look like. These are the theoretical probabilities as percentages, and your values should be close but may not be exactly the same.
-
+```
   2:  2.78 %
   3:  5.56 %
   4:  8.33 %
@@ -78,7 +78,7 @@ Below is what your output should look like. These are the theoretical probabilit
   10:  8.33 %
   11:  5.56 %
   12:  2.78 %
-
+```
 **Grading (22pts)**
 (3pts) File prob.js exists and simulates the rolling of 2 separate 6-sided die 100,000 times.
 (2pts) Program prob.js counts each of the 100,000 outcomes in an object or an array.
@@ -93,7 +93,7 @@ Create a file named card.js. This file should simulate selecting a random a rand
 Create an array that holds a single character (string) for each of the suits, and then another array holding a single character for each or the card values (use the character "t" for 10). Make a for loop iterating over each suit, then in the body of that loop create another for loop iterating over each value. Combine the value from the inner loop with the suit from the outer loop to generate a card (e.g. "4s" as 4 of spades, "kh" as king of hearts, etc.).
 
 After completing the deck write the code to randomly draw a card. Then display the card, but not using the two character encoding. Instead use a more formal proper name. So instead of printing "ts" display "10 of Spades".
-
+```
   let values = ["a", "2", "3", "4", "5", "6", "7", "8", "9", "t", "j", "q", "k"];
   let suits = ["s", "h", "c", "d"];
   
@@ -117,7 +117,7 @@ After completing the deck write the code to randomly draw a card. Then display t
     };
     
     let fancySuit = fancySuits[suitCharacter];
-
+```
 **Grading (20pts)**
 (6pts) Program card.js creates the deck of cards using nested for loops.
 (8pts) Program card.js selects a random card.
@@ -130,13 +130,13 @@ Create a file named deck.js. Use the same method of representing a deck of cards
 To remove specific items from an array you will need to research the array.splice() function. It is very important to your professional value that you learn how to teach yourself things. You may use any resource you like, but the Mozilla Developer Network is a good place to start.
 
 To select and remove a card from the end of the shuffled deck you can use array.pop() to remove it, but this would be like removing from the bottom of the deck.
-
+```
     let card = shuffled.pop();
-
+```
 Instead we can use array.shift(), which behaves just like .pop() but removes from the start of the array instead. This is more like drawing cards from the top of the deck.
-
+```
     let card = shuffled.shift();
-
+```
 **Grading (16pts)**
 (8pts) Program deck.js prints a 5-card hand (never duplicating a card).
 (8pts) Program deck.js doesn't print the same hand more than twice in 50 runs.
