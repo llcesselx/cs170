@@ -1,4 +1,4 @@
-# cs170
+# Randomness and Probability
 Class projects for cs170 Web Programming
 
 Randomness and Probability
