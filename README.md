@@ -1,4 +1,4 @@
-# cs170
+# JavaScript Basics
 Class projects for cs170 Web Programming
 
 **Running JavaScript Programs From the Terminal**
