@@ -35,7 +35,7 @@ console.log("Starting JavaScript...");
   </body>
 </html>
 ```
-Now the idea here is to have an image of a die roll result in the main area of the page, just below the `<h1>` heading. We can call this the **stage** `<div>`, and as such, we cna set the `id` attribute to `"stage"`. Under this stage `<div>` we will have **controls** `<div>` that contain controls to manipulate the items on the stage. In our case that will just be a button to click that will simulate the random rolling of one die. Then using that randomly selected value we will select the appropriate image to display. Select one of the die faces to display by default and use the path that image as the value of the `src` attribute on the `<img>` tag. Remember the `<img>` tag is a **void element**, so it can have no children, and therefor doesn't require a closing tag. You may self-close the opening tag if you wish (I normally do, but it isn't required). We are going to need to access this element later to chage the `src` attribute to a different image, so make sure you set an `id` attribute on it as well.
+Now the idea here is to have an image of a die roll result in the main area of the page, just below the `<h1>` heading. We can call this the **stage** `<div>`, and as such, we can set the `id` attribute to `"stage"`. Under this stage `<div>` we will have **controls** `<div>` that contain controls to manipulate the items on the stage. In our case that will just be a button to click that will simulate the random rolling of one die. Then using that randomly selected value we will select the appropriate image to display. Select one of the die faces to display by default and use the path that image as the value of the `src` attribute on the `<img>` tag. Remember the `<img>` tag is a **void element**, so it can have no children, and therefor doesn't require a closing tag. You may self-close the opening tag if you wish (I normally do, but it isn't required). We are going to need to access this element later to chage the `src` attribute to a different image, so make sure you set an `id` attribute on it as well.
 
 So in the body tag, setup the basic structure described above: 
 ```
@@ -60,7 +60,7 @@ function clickRoll() {
 ```
 ```
 <button onclick="clickRoll();>Roll the Die!</button>
-111
+```
 Now open the page in a browser and click the button. You should see a console message appear and also the alert box dialogue appear. This means you have things working so far. 
 
 Next we need to try to modify `img` element's `src` attribute so it will display a different image. Once we make that change to the element, the browser will automatically try to load the new image. So let's modify `clickRoll()`:
@@ -71,7 +71,7 @@ function clickRoll() {
     imgEl.setAttribute("src", imageUrl); 
 }
 ```
-Save teh file, refresh the browser page, and click the button. You should see the image change. 
+Save the file, refresh the browser page, and click the button. You should see the image change. 
 
 Now make a function that will generate a random integer corresponding to numbers on the side of a die (make a `roll()` function). Then you can call that `roll()` function to get a random number. With that random number you can construct the path to that number's image. Once you have the path, you can modify the `<img>` tag's `src` attribute to the new path, and the browser will render the new image, making it appear as though you are rolling a die. 
 ```
