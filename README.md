@@ -111,3 +111,53 @@ Now you may have notices that the button doesn't always seem to change the die n
 
 ## 2) Pick a Card (`pick.html`)
     
+Create a file called `pick.html`. In this program we will randomly select one cards from a deck of cards and display it on an HTML page.
+
+### Image Assets
+You may reference the image assets using absolute URLS of the images hosted from the lmay1 account on the CS Server. There URLS are as follows:
+
+https://cs.indstate.edu/~lmay1/assets/cards/ace_of_clubs.png
+
+https://cs.indstate.edu/~lmay1/assets/cards/2_of_clubs.png
+
+https://cs.indstate.edu/~lmay1/assets/cards/3_of_clubs.png
+
+... etc ...
+
+https://cs.indstate.edu/~lmay1/assets/cards/black_joker.png
+
+https://cs.indstate.edu/~lmay1/assets/cards/black_joker.png
+
+https://cs.indstate.edu/~lmay1/assets/cards/red_joker.png
+
+https://cs.indstate.edu/~lmay1/assets/cards/back.png
+
+If you want to download all the images for your own use you can do so.
+
+### Design and Layout (HTML and JavaScript)
+This will be very similar to `roll.html`, but with playing cards instead. There are some differences though, as you may notice, the image files have a transparent background. This is so you can set a background-color to make the cards whatever color you like. The backside of the card is not transparent however. So make sure you select a nice color for the back-side of the card and a nice color for the front (white or off-white is fine for the front, but you can use anything as long as I can see the numbers and suits easily). You will also need to place a border on the cards using CSS.
+
+Your program should start with a similar layout as `roll.html` but with a card in the center instead of a die. The initial image showing should be the backside of the card (with the CSS properties `background-color`, `border`, and `border-radius` set). Change all the text to appropriately match the theme of picking a card rather than rolling the die.
+
+### Answer the Question
+Now you may have noticed that the button doesn't always seem to change the card. However here, this happens far less frequently than with `roll.html`. What do you think is causing that behavior? Write your answer centered at the bottom of your HTML page in a paragraph tag (`<p>`).
+
+### Grading (21pts)
+1. **(8pts)** - File `pick.html` exists and simulates the picking of a card from a deck.
+2. **(2pts)** - `pick.html` - Clicking either the button or the image will pick a card.
+3. **(9pts - 1pt each)** - `pick.html` - Each of the above numbered stylistic improvements from roll.html are addressed in this program too.
+4. **(2pts)** - `pick.html` - Answer the question as described above.
+
+## CSS Position (`css-position.html`)
+
+### The CSS Position Property Video
+
+Follow along with the vide from the lecture material about creating and Interactive Demo of teh CSS Position Property. Below I have linked the video for convenience. 
+
+[![CSS Position - Interactive JavaScript Demo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc8C9W9wMSVzSi3Klyu09cvGw479QZaANJMw&usqp=CAU)](https://youtu.be/ACN2W8iOqrc)
+
+Create a file named `css-position.html`. This file can be created by following along with the lecture video above on the CSS Position Property (it will not be considered plagiarism). Change the color scheme to your liking using hex color codes `#RRGGBB`. 
+
+### Grading(20pts)
+1. **(16pts)** - File `css-position.html` exists and functions as the interactive demo in the video does. 
+2. **(4pts)** - File `css-position.html` has a unique color scheme using hex color codes. 
