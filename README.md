@@ -148,7 +148,7 @@ Now you may have noticed that the button doesn't always seem to change the card.
 3. **(9pts - 1pt each)** - `pick.html` - Each of the above numbered stylistic improvements from roll.html are addressed in this program too.
 4. **(2pts)** - `pick.html` - Answer the question as described above.
 
-## CSS Position (`css-position.html`)
+## 3) CSS Position (`css-position.html`)
 
 ### The CSS Position Property Video
 
