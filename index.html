@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="chat.css"/>
+    <link rel="icon" href="https://www.shareicon.net/data/128x128/2015/12/31/225974_alliance_256x256.png"/>
+    <script type="text/javascript" src="chat.js"></script>
+    <title>Lea's Page</title>
+</head>
+<body onload="getUserName()">
+    <h1 class="page-heading">
+        Login
+    </h1>
+    <div id="nameForm">
+        <form class="nameContainer" >
+            <input id ="name" type="text" name="username" class="nameInput" placeholder="Enter a Username" onsubmit="enterName()"/>
+            <input type="submit" value="Enter" class="nameInput" id="enterButton" onclick="enterName()"/>
+
+        </form>
+    </div>
+    <div class="in-link">
+        <a href="site/index.html">
+            Enter Site
+        </a>
+    </div>
+    <div class="in-link">
+        <a href="chat.html" onclick="enterName()">
+            Enter Chat Terminal
+        </a>
+    </div>
+</body>
+</html>
