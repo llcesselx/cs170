@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="chat.css"/>
+        <link rel="icon" href="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png"/>
+        <title>Chat</title>
+        <script type="text/javascript" src="chat.js"></script>
+    </head>
+    <body onload="getUserName()">
+        <div>
+            <h1 class="page-heading">Chat Terminal</h1>
+        </div>
+        <div style="padding-bottom: 10px; padding-left: 200px;">
+            <button type="button" id="testUserBtn" onclick="whoAmI()" style="margin: 0 20px;">
+                Who am I?
+            </button>
+        </div>
+        <div class="chat-view">
+
+        </div>
+        <div class="chat-controls">
+            <textarea id="message-box" onkeypress="detectEnter();"></textarea>
+            <button type="button" id="send-btn" onclick="sendMessage()">Send</button><br/>
+
+            <span style="font-weight: bold;">Emojis:</span><br/>
+
+            <span style="border: 1px solid black; vertical-align: top;">:dog:</span>
+            <img class="emoji" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/34cade57-6b95-4ec6-95db-65ebf8f6016b/dbkhtvz-6f6405de-82f2-41bf-8958-1e329ef90dc9.png"/>
+
+            <span style="border: 1px solid black;" style="vertical-align: top;">:cat:</span>
+            <img class="emoji" src="https://static.metafy.gg/uploads/store/collection_tag/6d0f7ef2-abe4-4a05-9159-b7355dce7de1/cutout/4e78443946555d39b1cced78aac77bbd.png"/>
+        </div>
+        <div style="padding-top: 20px; padding-left: 200px;">
+            <a href="index.html" style="position: relative; margin: 0 20px;">
+                Return to Login
+            </a>
+        </div>
+    </body>
+</html>
